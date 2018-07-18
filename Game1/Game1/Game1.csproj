@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{652D0B2F-15B0-4532-AC69-059AF4FD8F11}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game1</RootNamespace>
+    <AssemblyName>Game1</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Game1_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <MonoGamePlatform>WindowsStoreApp</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\WindowsUniversal\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\WindowsUniversal\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Camera.cs" />
+    <Compile Include="Classes\Animal.cs" />
+    <Compile Include="Classes\AnimalHouse.cs" />
+    <Compile Include="Classes\AnimalType.cs" />
+    <Compile Include="Classes\Building.cs" />
+    <Compile Include="Classes\Facility.cs" />
+    <Compile Include="Classes\FacilityType.cs" />
+    <Compile Include="Classes\MainGoal.cs" />
+    <Compile Include="Classes\Park.cs" />
+    <Compile Include="Classes\Time.cs" />
+    <Compile Include="Classes\Visitor.cs" />
+    <Compile Include="Component.cs" />
+    <Compile Include="Controls\Button.cs" />
+    <Compile Include="Controls\ButtonExp.cs" />
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Game1.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="States\GameState.cs" />
+    <Compile Include="States\HelpState.cs" />
+    <Compile Include="States\MenuState.cs" />
+    <Compile Include="States\PauseMenuState.cs" />
+    <Compile Include="States\Settings.cs" />
+    <Compile Include="States\Splashscreen.cs" />
+    <Compile Include="States\State.cs" />
+    <Compile Include="States\StateManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Content.mgcb" />
+    <None Include="Content\Fonts\blokletters.spritefont" />
+    <None Include="Content\Fonts\bloklettersextraklein.spritefont" />
+    <None Include="Content\Fonts\bloklettersklein.spritefont" />
+    <None Include="Content\Fonts\default.spritefont" />
+    <None Include="Content\Fonts\verdana.spritefont" />
+    <Content Include="Controls\BLOKLETTERS-VILTSTIFT.TTF" />
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Game1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Controls\BackButton.png" />
+    <Content Include="Content\Controls\button.png" />
+    <Content Include="Content\Controls\FullscreenButton.png" />
+    <Content Include="Content\Controls\giraffeText.png" />
+    <Content Include="Content\Controls\GiraffeVierkant.png" />
+    <Content Include="Content\Controls\knopgeld.png" />
+    <Content Include="Content\Controls\knopGirraffe.png" />
+    <Content Include="Content\Controls\knopPanter.png" />
+    <Content Include="Content\Controls\knopZebra.png" />
+    <Content Include="Content\Controls\MuteButton.png" />
+    <Content Include="Content\Controls\panterText.png" />
+    <Content Include="Content\Controls\PanterVierkant.png" />
+    <Content Include="Content\Controls\PlayButton.png" />
+    <Content Include="Content\Controls\slider.png" />
+    <Content Include="Content\Controls\Volume.png" />
+    <Content Include="Content\Controls\zebraText.png" />
+    <Content Include="Content\Controls\ZebraVierkant.png" />
+    <Content Include="Content\Images\coarse.png" />
+    <Content Include="Content\Images\dierenKnop.png" />
+    <Content Include="Content\Images\faciliteitenKnop.png" />
+    <Content Include="Content\Images\faciliteiten\eetendrankKraam.png" />
+    <Content Include="Content\Images\faciliteiten\eetendrankKraam2.png" />
+    <Content Include="Content\Images\faciliteiten\Info1.png" />
+    <Content Include="Content\Images\faciliteiten\Info2.png" />
+    <Content Include="Content\Images\faciliteiten\ToiletBuilding.png" />
+    <Content Include="Content\Images\faciliteiten\ToiletBuilding2.png" />
+    <Content Include="Content\Images\grass1.png" />
+    <Content Include="Content\Images\grass2.png" />
+    <Content Include="Content\Images\GrassTile.png" />
+    <Content Include="Content\Images\kooien\flamingoLevel1.png" />
+    <Content Include="Content\Images\kooien\flamingoLevel2.png" />
+    <Content Include="Content\Images\kooien\flamingoLevel3.png" />
+    <Content Include="Content\Images\kooien\girafLevel1.png" />
+    <Content Include="Content\Images\kooien\girafLevel2.png" />
+    <Content Include="Content\Images\kooien\girafLevel3.png" />
+    <Content Include="Content\Images\kooien\gorillaLevel1.png" />
+    <Content Include="Content\Images\kooien\gorillaLevel2.png" />
+    <Content Include="Content\Images\kooien\gorillaLevel3.png" />
+    <Content Include="Content\Images\kooien\kangaroeLevel1.png" />
+    <Content Include="Content\Images\kooien\kangaroeLevel2.png" />
+    <Content Include="Content\Images\kooien\kangaroeLevel3.png" />
+    <Content Include="Content\Images\kooien\leeuwLevel1.png" />
+    <Content Include="Content\Images\kooien\leeuwLevel2.png" />
+    <Content Include="Content\Images\kooien\leeuwLevel3.png" />
+    <Content Include="Content\Images\kooien\olifantLevel1.png" />
+    <Content Include="Content\Images\kooien\olifantLevel2.png" />
+    <Content Include="Content\Images\kooien\olifantLevel3.png" />
+    <Content Include="Content\Images\kooien\PandaLevel1.png" />
+    <Content Include="Content\Images\kooien\PandaLevel2.png" />
+    <Content Include="Content\Images\kooien\PandaLevel3.png" />
+    <Content Include="Content\Images\logo-klein.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\newgamebg.png" />
+    <Content Include="Content\Images\nhlstenden.png" />
+    <Content Include="Content\Images\olifantLevel1.png" />
+    <Content Include="Content\Images\pausedbg.png" />
+    <Content Include="Content\Images\rand.png" />
+    <Content Include="Content\Images\settingsbg.png" />
+    <Content Include="Content\Images\splashscreen-geenlaadbalk-resized.jpg" />
+    <Content Include="Content\Images\splashscreen-geenlaadbalk.jpg" />
+    <Content Include="Content\Images\tile.png" />
+    <Content Include="Content\Images\UI\popoutmenu.png" />
+    <Content Include="Content\Images\UI\popupmenu.png" />
+    <Content Include="Content\Images\verblijvenKnop.png" />
+    <Content Include="Content\Music\Pixel-Puppies.mp3" />
+    <Content Include="level.txt" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="GamePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
